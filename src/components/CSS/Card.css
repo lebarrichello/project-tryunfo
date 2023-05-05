@@ -1,0 +1,190 @@
+.board {
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+}
+
+.add, .preview {
+  align-items: center;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  width: 30vw;
+}
+
+h2 {
+  color: #d82b1e;
+  font-family: Times New Roman , Times , serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 50px;
+  text-shadow: 0 0 10px rgba(247, 3, 3, 0.904);
+  text-transform: uppercase;
+}
+
+.add h2 {
+  margin-bottom: 25px;
+}
+
+.draw {
+  align-items: center;
+  background-color: white;
+  border: 6px white;
+  border-radius: 16px;
+  box-shadow: 10px 10px 8px black;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  margin-top: 50px;
+  width: 295px;
+}
+
+.title {
+  background-color: #d82b1e;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 10px 0;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 264px;
+  word-break: break-all;
+}
+
+.imageArea {
+  border: 4px solid #d82b1e;
+  border-radius: 0 0 10px 10px;
+}
+
+.descArea {
+  align-items: center;
+  color: black;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 270px;
+  word-break: break-all;
+}
+
+.attributes {
+  align-items: stretch;
+  background: white;
+  border: 2px solid rgba(250, 188, 1, 1);
+  border-radius: 3px;
+  color: black;
+  display: flex;
+  height: 5px;
+  margin-bottom: 5px;
+  padding: 13px;
+  position: relative;
+  width: 260px;
+}
+
+.attributes p {
+  color: black;
+  font-weight: 700;
+  left: 90%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+span {
+  color: black;
+  left: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tryunfo {
+  position: absolute;
+  transform: translate(90px, 190px) rotate(-10deg);
+}
+
+.yellow .draw {
+  background-color: white;
+}
+
+.yellow .attributes {
+  border: 2px solid #d82b1e;
+}
+
+.trynfocheck {
+  color: transparent;
+}
+
+.yellow .trynfocheck {
+  color: transparent;
+}
+
+.pink .draw {
+  background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+}
+
+.pink .attributes {
+  background-color: transparent;
+  border: 2px solid #2d2205;
+}
+
+.pink .attributes p {
+  color: #2d2205;
+}
+
+.pink .title {
+  background-color: #2d2205;
+  color: #b47e11;
+}
+
+.pink .imageArea {
+  border: 4px solid #2d2205;
+}
+
+.pink span {
+  color: #2d2205;
+}
+
+.pink .trynfocheck {
+  color: transparent;
+}
+
+@media screen and ( max-width : 720px ) {
+
+  .board {
+    flex-direction: column;
+  }
+
+  .add {
+    width: 100vw;
+  }
+
+  .preview {
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+    width: 100vw;
+  }
+}
+
+@media screen and ( min-width : 768px ) and ( max-width : 1023px ) {
+
+  .logo {
+    width: 100vw;
+  }
+
+  .add, .preview {
+    width: 50vw;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+}

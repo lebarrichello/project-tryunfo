@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+.logo {
+  display: flex;
+  filter: drop-shadow(10px 10px 10px black);
+  height: 300px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.btnRemove {
+  background-color: red;
+  border: 0;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(247, 3, 3, 0.904);
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  height: 30px;
+  margin-top: 40px;
+  width: 30px;
+}
+
+@media screen and ( max-width : 720px ) {
+
+  .logo {
+    width: 100vw;
+  }
+}
+
+@media screen and ( min-width : 768px ) and ( max-width : 1023px ) {
+
+  .logo {
+    width: 100vw;
+  }
+}

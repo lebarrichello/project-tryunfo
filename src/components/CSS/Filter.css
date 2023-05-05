@@ -1,0 +1,94 @@
+.filterArea {
+  background-color: #303030;
+  box-shadow: 10px 10px 8px  black;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100vw;
+}
+
+.inputTitle {
+  color: rgb(250, 188, 1);
+  font-family: Times New Roman , Times , serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(247, 203, 9, 0.904);
+  text-transform: uppercase;
+}
+
+.filterContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.inputTrunfo {
+  color: rgb(250, 188, 1);
+  display: inline;
+  font-family: Times New Roman , Times , serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 25px;
+  padding-right: 15px;
+  text-shadow: 0 0 10px rgba(247, 203, 9, 0.904);
+  text-transform: uppercase;
+}
+
+.inputNameCard {
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 3px 4px 1px black;
+  font-size: 15px;
+  max-width: 300px;
+  outline: none;
+  padding: 12px 10px;
+  padding-top: 10px;
+  width: 400px;
+}
+
+.inputRare {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 3px 4px 1px black;
+  font-size: 15px;
+  outline: none;
+  padding: 12px 10px;
+  padding-top: 10px;
+  width: 150px;
+}
+
+.filterCheckbox {
+  accent-color: rgba(247, 203, 9, 0.904);
+}
+
+@media screen and ( max-width : 720px ) {
+
+  .filterContainer {
+    flex-direction: column;
+  }
+
+  .inputRare {
+    margin-bottom: 5px;
+    max-width: 300px;
+    width: 400px;
+  }
+}
+
+@media screen and ( min-width : 768px ) and ( max-width : 1023px ) {
+
+  .filterArea {
+    width: 100vw;
+  }
+
+  .filterContainer {
+    flex-direction: column;
+  }
+
+  .inputRare {
+    margin-bottom: 5px;
+    max-width: 300px;
+    width: 400px;
+  }
+
+}

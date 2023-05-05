@@ -1,0 +1,68 @@
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 50px;
+  text-align: center;
+  width: 2vw;
+}
+
+label {
+  color: white;
+}
+
+label, p {
+  padding: 5px;
+  padding-top: 5px;
+}
+
+.inpuStyle {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 3px 4px 1px black;
+  font-size: 15px;
+  outline: none;
+  padding: 12px 10px;
+  padding-top: 10px;
+  width: 290px;
+}
+
+form button {
+  background-color: rgba(250, 188, 1, 1);
+  border: rgba(250, 188, 1, 1);
+  border-radius: 30px;
+  box-shadow: 5px 5px black;
+  color: black;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+}
+
+form button:disabled {
+  background-color: #303030;
+  color: white;
+}
+
+form button:hover:not( [ disabled ] ) {
+  cursor: pointer;
+}
+
+.hasTrunfo {
+  color: #d82b1e;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.checkSTrunfo {
+  color: transparent;
+}
+
+
+.checkTryunfoForm {
+  accent-color: red;
+  outline: none;
+}

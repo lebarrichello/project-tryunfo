@@ -42,29 +42,6 @@ Crie um formulário que será utilizado para criar as cartas do seu baralho.
   ![requisito-1](images/requisito-1.png)
 
   </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se existe um input texto que possui o `data-testid="name-input"`.
-  
-  - Será validado se existe um input textarea que possui o `data-testid="description-input"`.
-  
-  - Será validado se existe um input number que possui o `data-testid="attr1-input"`.
-  
-  - Será validado se existe um input number que possui o `data-testid="attr2-input"`.
-  
-  - Será validado se existe um input number que possui o `data-testid="attr3-input"`.
-  
-  - Será validado se existe um input texto que possui o `data-testid="image-input"`.
-
-  - Será validado se existe um input select que possui o `data-testid="rare-input"` com as `options`: `normal`, `raro` e `muito raro`, nesta ordem.
-
-  - Será validado se existe um input checkbox que possui o `data-testid="trunfo-input"`.
-
-  - Será validado se existe um botão que possui o `data-testid="save-button"`.
-</details>
-
 ---
 
 ## 2. Adicione as props necessárias ao componente de formulário 
@@ -110,33 +87,6 @@ Crie um formulário que será utilizado para criar as cartas do seu baralho.
   </details><br />
   
  **:bulb: Obs:** *não se preocupe com os valores a serem passados para as `props` nesse momento. No requisito 4, ficará nítido como estas `props` serão utilizadas.*
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o campo de nome recebe o valor da prop `cardName` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo de descrição recebe o valor da prop `cardDescription` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo do atributo 1 recebe o valor da prop `cardAttr1` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo do atributo 2 recebe o valor da prop `cardAttr2` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo do atributo 3 recebe o valor da prop `cardAttr3` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo de imagem recebe o valor da prop `cardImage` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo de raridade recebe o valor da prop `cardRare` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo de Super Trufo recebe o valor da prop `cardTrunfo` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o botão de salvar é habilitado se o valor da prop `isSaveButtonDisabled` for `false`.
-
-  - Será validado se o botão de salvar é desabilitado se o valor da prop `isSaveButtonDisabled` for `true`.
-
-  - Será validado se a callback `onSaveButtonClick` é chamada quando o botão é clicado. 
-</details>
-
 ---
 
 ## 3. Crie e renderize o componente Card com as props necessárias
@@ -178,20 +128,6 @@ Crie um formulário que será utilizado para criar as cartas do seu baralho.
   ![requisito-3](images/requisito-3.png)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-  
-  - Será validado se o componente `data-testid="name-card"` é exibido e possui o valor da prop `cardName`.
-  - Será validado se o componente `data-testid="image-card"` é exibido e possui o atributo `src` com o valor da prop `cardImage` e o atributo alt com o valor da prop `cardName`.
-  - Será validado se o componente `data-testid="description-card"` é exibido e possui o valor da prop `cardDescription`.
-  - Será validado se o componente `data-testid="attr1-card"` é exibido e possui o valor da prop `cardAttr1`.
-  - Será validado se o componente `data-testid="attr2-card"` é exibido e possui o valor da prop `cardAttr2`.
-  - Será validado se o componente `data-testid="attr3-card"` é exibido e possui o valor da prop `cardAttr3`.
-  - Será validado se o componente `data-testid="rare-card"` é exibido e possui o valor da prop `cardRare`.
-  - Será validado se o componente `data-testid="trunfo-card"` é exibido quando a prop `cardTrunfo` tiver o valor `true`.
-  - Será validado se o componente `data-testid="trunfo-card"` **não** é exibido quando a prop `cardTrunfo` tiver o valor `false`.
-</details>
-
 ---
 
 ## 4. Crie o preview da carta que está sendo criada pelo formulário
@@ -226,18 +162,6 @@ Você deverá usar a prop `onInputChange` para passar uma callback para lidar co
 
   ![requisito-4](images/requisito-4.png)
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se é renderizado no preview da carta o valor digitado no input Nome do formulário.
-  - Será validado se é renderizado no preview da carta o valor digitado no input Descrição do formulário.
-  - Será validado se é renderizado no preview da carta o valor digitado no input referente ao atributo 1 no formulário.
-  - Será validado se é renderizado no preview da carta o valor digitado no input referente ao atributo 2 no formulário.
-  - Será validado se é renderizado no preview da carta o valor digitado no input referente ao atributo 3 no formulário.
-  - Será validado se é renderizado no preview da carta o `data-testid="trunfo-card"` se o checkbox Super Trunfo for selecionado.
-</details>
-
 ---
 
 ## 5. Faça a validação do botão de Salvar no formulário
@@ -252,23 +176,6 @@ Você deverá usar a prop `onInputChange` para passar uma callback para lidar co
   
   * Os atributos não podem receber valores negativos.
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o botão `salvar` está desabilitado quando a página é renderizada pela primeira vez.
-  - Será validado se o botão `salvar` está desabilitado se o campo nome estiver vazio.
-  - Será validado se o botão `salvar` está desabilitado se o campo imagem estiver vazio.
-  - Será validado se o botão `salvar` está desabilitado se o campo descrição estiver vazio.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 1 for maior que 90.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 1 for menor que 0.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 2 for maior que 90.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 2 for menor que 0.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 3 for maior que 90.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 3 for menor que 0.
-  - Será validado se o botão `salvar` está desabilitado se a somatória dos campos de atributos for maior que 210.
-  - Será validado se o botão `salvar` é habilitado ao preencher todos os campos do formulário corretamente.
-</details>
 
 ---
 
@@ -287,16 +194,6 @@ Você deverá usar a prop `onInputChange` para passar uma callback para lidar co
   * Após salvar as informações, o campo `Raridade` deve conter o valor `normal`.
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se os campos do formulário `Nome`, `Descrição` e `Imagem` são limpos após clicar em `salvar`.
-
-  - Será validado se o os três campos de atributos têm o valor `0` após clicar em `salvar`.
-  
-  - Será validado se o campo de `Raridade` tem o valor `normal` após clicar em `salvar`.
-</details>
-
 ---
 
 ## 7. Crie a validação do Super Trunfo
@@ -310,13 +207,6 @@ Você deverá usar a prop `onInputChange` para passar uma callback para lidar co
   **Dica: Lembre-se de utilizar a renderização condicional (na seção [:convenience_store: Desenvolvimento](#orientações)) do React nesse requisito.**
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o checkbox do Super Trunfo é renderizado ao carregar a página.
-
-  - Será validado se o texto "Você já tem um Super Trunfo em seu baralho" é renderizado caso já exista uma carta Super Trunfo no baralho.
-</details>
 
 ---
 
@@ -334,12 +224,6 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
   ![requisito-8](images/requisito-8.png)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se a carta é renderizada na página ao salvá-la.
-  - Será validado se a lista é atualizada automaticamente quando uma carta é adicionada.
-</details>
 
 ---
 
@@ -357,14 +241,6 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
     ![requisito-9](images/requisito-9.png)
   </details>
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o botão `Excluir` é renderizado na tela apenas nas cartas adicionadas ao baralho.
-  - Será validado se ao adicionar uma carta e excluí-la em seguida, a carta não é renderizada.
-  - Será validado se ao adicionar duas cartas e excluir uma em seguida, a carta não é renderizada.
-  - Será validado se ao excluir uma carta Super Trunfo, o checkbox no formulário é renderizado novamente.
-</details>
 
 ---
 
@@ -382,14 +258,6 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
 
   ![requisito-10](images/requisito-10.png)
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o campo de filtro por nome renderiza na tela.
-  - Será validado se apenas as cartas correspondentes aparecem após o filtro.
-  - Será validado se não renderiza nenhuma carta se não houver nome correspondente.
-</details>
 
 ---
 
@@ -412,16 +280,6 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
   ![requisito-11](images/requisito-11.png)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o campo de filtro por Raridade renderiza na tela.
-  - Será validado se somente as cartas com raridade `normal` são exibidas após o filtro.
-  - Será validado se somente as cartas com raridade `raro` são exibidas após o filtro.
-  - Será validado se somente as cartas com raridade `muito raro` são exibidas após o filtro.
-  - Será validado se todas as cartas são exibidas quando o filtro de raridade está com a opção `todas` selecionada.
-  - Será validado se não renderiza nenhuma carta se não houver raridade correspondente.
-</details>
 
 ---
 
@@ -438,10 +296,6 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
   ![requisito-12](images/requisito-12.png)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-  - Será validado se somente a carta de super trunfo é exibida quando esse filtro é selecionado.
-</details>
 
 ---
 

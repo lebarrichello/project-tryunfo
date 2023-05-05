@@ -1,381 +1,11 @@
-# Boas-vindas ao repositório do projeto Tryunfo!
+##  PROJETO
+ <a href="https://picasion.com/"><img src="https://i.picasion.com/pic92/06a7f7c52dfe8db13040321610c9e098.gif"  /></a><br /></a>
 
-Para realizar o projeto, atente-se a cada passo descrito a seguir e, se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ (PR) para colocar seus códigos.
 
-# Termos e acordos
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta e do Manual da Pessoa Estudante da Trybe.
 
-# Entregáveis
-
-<details>
-  <summary><strong>🤷🏽‍♀️ Como entregar</strong></summary><br />
-
-  Para entregar o seu projeto você deverá criar um *Pull Request* neste repositório.
-
-  Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/course/4d67f5b4-34a6-489f-a205-b6c7dc50fc16/) e nosso [Blog - Git & GitHub](https://blog.betrybe.com/tecnologia/git-e-github/) sempre que precisar!
-</details>
-
-<details>
-  <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary><br />
-
-  Neste projeto você vai desenvolver um jogo no estilo Super Trunfo! Ao utilizar essa aplicação uma pessoa usuária deverá ser capaz de:
-
-  * Criar um baralho com o tema livre;
-
-  * Adicionar e remover uma carta do baralho;
-
-  * Visualizar todas as cartas que foram adicionadas ao baralho;
-
-  * Jogar com o baralho criado.
-
-</details>
-
-<details>
-  <summary><strong>:memo: Habilidades</strong></summary><br />
-
-  Neste projeto, verificamos se você é capaz de:
-
-  * Ler o estado de um componente e usá-lo para alterar o que exibimos no browser
-
-  * Inicializar um componente, dando a ele um estado pré-definido
-
-  * Atualizar o estado de um componente
-
-  * Capturar eventos utilizando a sintaxe do React
-
-  * Criar formulários utilizando sintaxe JSX com as tags: `input`, `textarea`, `select`, `form`, `checkbox`
-
-  * Transmitir informações de componentes filhos para componentes pais via callbacks
-</details>
-
-<details>
-  <summary><strong>🗓 Data de Entrega</strong></summary><br />
-  
-  * Este projeto é individual;
-  * Serão `3` dias de projeto;
-  * Data para entrega final do projeto: `17/04/2023 14:00`.
-
-</details>
-
-# Orientações
-
-<details>
-  <summary><strong>‼️ Antes de começar a desenvolver</strong></summary><br />
-
-  1. Clone o repositório
-
-  - Use o comando: `git clone git@github.com:tryber/sd-030-a-project-tryunfo.git`.
-  - Entre na pasta do repositório que você acabou de clonar:
-    - `cd sd-030-a-project-tryunfo`
-
-  2. Instale as dependências
-
-  - `npm install`.
-  
-  3. Crie uma branch a partir da branch `master`
-
-  - Verifique que você está na branch `master`
-    - Exemplo: `git branch`
-  - Se não estiver, mude para a branch `master`
-    - Exemplo: `git checkout master`
-  - Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
-    - Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    - Exemplo: `git checkout -b joaozinho-sd-030-a-project-tryunfo`
-
-  4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-
-  - Verifique que as mudanças ainda não estão no _stage_
-    - Exemplo: `git status` (deve aparecer listada a pasta _joaozinho_ em vermelho)
-  - Adicione o novo arquivo ao _stage_ do Git
-    - Exemplo:
-      - `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-      - `git status` (deve aparecer listado o arquivo _joaozinho/README.md_ em verde)
-  - Faça o `commit` inicial
-    - Exemplo:
-      - `git commit -m 'iniciando o projeto x'` (fazendo o primeiro commit)
-      - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-  5. Adicione a sua branch com o novo `commit` ao repositório remoto
-
-  - Usando o exemplo anterior: `git push -u origin joaozinho-sd-030-a-project-tryunfo`
-
-  6. Crie um novo `Pull Request` _(PR)_
-
-  - Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-030-a-project-tryunfo/pulls)
-  - Clique no botão verde _"New pull request"_
-  - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-  - Coloque um título para a sua _Pull Request_
-    - Exemplo: _"Cria tela de busca"_
-  - Clique no botão verde _"Create pull request"_
-  - Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-  - **Não se preocupe em preencher mais nada por enquanto!**
-  - Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-030-a-project-tryunfo/pulls) e confira que o seu _Pull Request_ está criado
-
-</details>
-
-<details>
-  <summary><strong>⌨️ Durante o desenvolvimento</strong></summary><br />
-
-  - Faça `commits` das alterações que você fizer no código regularmente
-
-  - Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-  - Os comandos que você utilizará com mais frequência são:
-    1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-    2. `git add` _(para adicionar arquivos ao stage do Git)_
-    3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-    4. `git push -u origin nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-    5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
-</details>
-
-<details>
-  <summary><strong>🤝 Depois de terminar o desenvolvimento (opcional)</strong></summary><br />
-
-  Para sinalizar que o seu projeto está pronto para o _"Code Review"_, faça o seguinte:
-
-  - Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-    - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-    - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-    - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-030-a`.
-
-  Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
-</details>
-
-<details>
-  <summary><strong>🕵🏿 Revisando um pull request</strong></summary><br />
-
-  Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
-</details>
-
-<details>
-  <summary><strong>🎛 Linter</strong></summary><br />
-
-  Para garantir a qualidade do código, vamos utilizar neste projeto os linters `ESLint` e `StyleLint`.
-  Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
-  e de fácil manutenção! Para rodá-los localmente no projeto, execute os comandos abaixo:
-
-  ```bash
-    npm run lint
-    npm run lint:styles
-  ```
-
-  ⚠️ **PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS.
-  ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠️
-
-  Em caso de dúvidas, confira o material do course sobre [ESLint e Stylelint](https://app.betrybe.com/course/real-life-engineer/eslint).
-</details>
-
-<details>
-  <summary><strong>🛠 Testes</strong></summary><br />
-
-  Para avaliar o projeto iremos utilizar [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) para execução dos testes.
-
-  Esse _framework_ de testes utiliza algumas marcações no código para verificar a solução proposta, uma dessas marcações é o atributo `data-testid` e faremos uso dele aqui.
-
-  Na descrição dos requisitos (logo abaixo) será pedido que seja feita a adição de atributos `data-testid` nos elementos _HTML_. Vamos a um exemplo para deixar claro essa configuração:
-
-  Se o requisito pedir "crie um botão e adicione o id de teste (ou `data-testid`) com o valor `my-action`, você pode criar:
-
-  ```html
-  <button data-testid="my-action"></button>
-  ```
-  
-  ou
-
-  ```html
-  <a data-testid="my-action"></a>
-  ```
-
-  Ou seja, o atributo `data-testid="my-action"` servirá para o React Testing Library(RTL) identificar o elemento e dessa forma, conseguiremos realizar testes focados no comportamento da aplicação.
-
-  Em alguns requisitos, utilizamos o `getByRole` para poder selecionar os elementos de forma semântica. Portanto atente-se às instruções de cada requisito. Por exemplo, se o requisito pedir explicitamente um `button`, você deverá utilizar exatamente esse elemento.
-
-  Afim de verificar a solução proposta, você pode executar todos os testes localmente, basta executar:
-
-  ```bash
-  npm test
-  ```
-
-  ### Dica: desativando testes
-
-  Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é extensa. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste. Veja um exemplo:
-
-  ```js
-  it.skip("Será validado se o campo de filtro por nome renderiza na tela", () => {
-    render(<App />)
-    const filterNameInput = screen.getByTestId(/name-filter/i);
-    expect(filterNameInput).toBeInTheDocument();
-  });
-  ```
-  ![image](skip-image.png)
-
-  Uma estratégia é pular todos os testes no início e ir implementando um teste de cada vez, removendo dele a função `skip`.
-
-  Você também pode rodar apenas um arquivo de teste, por exemplo:
-
-  ```bash
-  npm test 01.Form.test.js
-  ```
-
-  ou
-
-  ```bash
-  npm test 01.Form
-  ```
-
-  Uma outra forma para contornar esse problema é a utilização da função `.only` após o `it`. Com isso, será possível que apenas um requisito rode localmente e seja avaliado.
-
-  ```js
-  it.only("Será validado se o campo de filtro por nome renderiza na tela", () => {
-    render(<App />)
-    const filterNameInput = screen.getByTestId(/name-filter/i);
-    expect(filterNameInput).toBeInTheDocument();
-  });
-  ```
-  ![image](only-image.png)
-
-  ⚠️ **O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?**
-</details>
-
-<details>
-  <summary><strong>:convenience_store: Desenvolvimento </strong></summary><br />
-
-  Você deve desenvolver uma aplicação em React com manipulação de estados em classes. Essa aplicação simulará um jogo de **Super Trunfo**, desde a criação das cartas do seu baralho até a funcionalidade de jogar.
-
-  Na renderização das cartas, sua aplicação deverá possuir três filtros de listagem de cartas: filtro por **nome**, por **raridade** e por **Super Trunfo**. Os filtros **nome** e **raridade** são acumulativos. O filtro **Super Trunfo** funciona de forma independente.
-
-  O tema do seu baralho é **livre**, então explore a sua criatividade! Mas use seu bom senso para a criação do seu baralho. Lembre-se do código de Conduta e do Manual da Pessoa Estudante da Trybe.
-
-  ### :bulb: Renderização condicional :bulb:
-
-  Em alguns requisitos será necessária a utilização de renderização condicional. Você pode verificar a documentação do React [Renderização Condicional](https://pt-br.reactjs.org/docs/conditional-rendering.html).
-
-  Este comportamento é utilizado no React para renderizar, ou não, determinado componente de acordo com uma condição _booleana_.
-
-  No exemplo abaixo, o estado `isActiveButton` começa como `false`, e ao clicar no botão `Clique em mim!`, mudamos esse estado para `true`.
-  Na condição da renderização, quando o estado for `false`, renderizamos o parágrafo `Não está ativo!` e quando for `true`, renderizamos o parágrafo `Está ativo!`.
-
-  ```js
-  import React from "react"
-
-  class Componente extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      isActiveButton: false,
-    };
-  }
-
-    render() {
-      const { isActiveButton } = this.state;
-      return (
-        <div>
-          <button onClick={() => this.setState({isActiveButton: true})}>Clique em mim!</button>
-          {
-            isActiveButton ? <p>Está ativo!</p> : <p>Não está ativo!</p>
-          }
-        </div>
-      )
-    }
-  }
-  ```
-
-  No caso acima, temos duas possibilidades, ativo ou não, ou seja, duas renderizações. Mas se for de apenas uma renderização, como por exemplo, renderizar somente se o tamanho do _array_ for maior do que 0, podemos utilizar o `&&`: 
-
-  ```js
-  ...
-  {
-    array.length > 0 && <p>Array não vazio!</p>
-  }
-  ...
-  ```
-</details>
-
-<details>
-  <summary><strong>:information_source: Informações Adicionais </strong></summary><br />
-
-  ### Informações sobre o Super Trunfo
-
-  O Super Trunfo é um jogo de cartas que ficou muito popular no Brasil entre as décadas de 80 e 90, mas que faz bastante sucesso até hoje. Suas regras são bastante simples, por isso ele é considerado um jogo fácil de jogar. Apesar de ter regras simples, cada baralho  de Super Trunfo pode ter um tema diferente, o que o torna um jogo bastante divertido.
-
-  Originalmente, o jogo de Super Trunfo é formado por um baralho de 32 cartas. Cada carta representa um item relacionado ao tema do jogo. Em cada carta também existe uma lista com características daquele item e cada característica possui um valor numérico. 
-
-  Para começar o jogo, as cartas devem ser embaralhadas e divididas igualmente para cada participante. Em cada rodada cada pessoa pega somente a primeira carta do seu monte. Na primeira rodada uma pessoa escolhe qual característica quer comparar com as cartas das outras pessoas que estão jogando. Ganha quem tiver o maior número nessa característica. A pessoa que ganhou a rodada recebe as cartas das outras pessoas e escolhe qual característica quer comparar na próxima rodada. O jogo termina quando alguma pessoa tiver todas as cartas do baralho.
-
-  Em cada baralho existe uma (e somente uma) carta Super Trunfo. Essa carta ganha de todas as outras cartas do baralho, independentemente dos valores das características.
-
-  O jogo de Super Trunfo pode ser feito com praticamente qualquer tema, mas tradicionalmente os mais comuns são: carros, países, cidades ou animais.
-
-  ### Criando, lendo, atualizando e apagando informações
-
-  Quando estamos lidando com informações, temos 4 operações principais: __Create__ (criar), __Read__ (ler), __Update__ (atualizar) e __Delete__ (apagar). Com essas quatro operações, formamos o acrônimo CRUD. Esse acrônimo é um termo que será bastante utilizado daqui para frente na sua jornada como pessoa desenvolvedora.
-
-  Nesse projeto vamos começar a lidar um pouco mais com essas operações, mas não vamos fazer todas elas. Você precisará criar, ler e apagar informações, mas não precisará desenvolver a função de editar por enquanto. Não se preocupe, pois no futuro, voltaremos a implementar essas operações e nos próximos projetos você fará um CRUD completo.
-</details>
-
-<details>
-  <summary><strong>🗣 Nos dê feedbacks sobre o projeto!</strong></summary><br />
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. 
-**Leva menos de 3 minutos!**
-
-[FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH#cohort_hidden=CH30-A&template=betrybe/sd-0x-project-tryunfo)
-
-</details>
-
-<details>
-  <summary><strong>💻 Protótipo do projeto no Figma</strong></summary><br />
-
-Além da qualidade do código e do atendimento aos requisitos, um bom layout é um dos aspectos responsáveis por melhorar a usabilidade de uma aplicação e turbinar seu portfólio!
-
-Você pode estar se perguntando: *"Como deixo meu projeto com um layout mais atrativo?"* 🤔
-
-Para isso, disponibilizamos esse [protótipo do Figma](https://www.figma.com/file/BZbftXbClcRkNHG4thIVS8/%5BProjeto%5D%5BFrontend%5D-Tryunfo) para lhe ajudar !
-
-⚠️ A estilização de sua aplicação não será avaliada nesse projeto, portanto esse protótipo é apenas uma **sugestão** e seu uso é **opcional**. Sinta-se à vontade para modificar o layout e deixá-lo do seu jeito.
-
-</details>
-
-<details>
-  <summary><strong>🗂 Compartilhe seu portfólio!</strong></summary><br />
-
-  Você sabia que o LinkedIn é a principal rede social profissional e compartilhar o seu aprendizado lá é muito importante para quem deseja construir uma carreira de sucesso? Compartilhe esse projeto no seu LinkedIn, marque o perfil da Trybe (@trybe) e mostre para a sua rede toda a sua evolução.
-
-</details>
-
-<details>
-  <summary><strong>:bow: Agradecimentos</strong></summary><br />
-
-  Pessoas que contribuíram com feedbacks no programa de _beta testers_ desse projeto:
-
-  - [@alanmdf](https://github.com/alanmdf);
-  - [@Aleilton](https://github.com/Aleilton);
-  - [@felipeventorim](https://github.com/felipeventorim);
-  - [@gusttavocaruso](https://github.com/gusttavocaruso);
-  - [@junglejf](https://github.com/junglejf);
-  - [@JVictorC](https://github.com/JVictorC);
-  - [@lcds90](https://github.com/lcds90);
-  - [@Murilo-Rainho](https://github.com/Murilo-Rainho);
-  - [@rafaelromanoz](https://github.com/rafaelromanoz);
-  - [@rogeriop1990cv](https://github.com/rogeriop1990cv);
-  - [@RoyMusthang](https://github.com/RoyMusthang);
-  - [@vdionysio](https://github.com/vdionysio).
-</details>
-
-# Requisitos
-
-:warning: **PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS.** :warning:
-
-:warning: Os gifs são meramente ilustrativos para visualizar o fluxo da aplicação. Portanto, os nomes devem seguir os requisitos e não o gif. :warning:
+##  REQUISITOS
 
 ## 1. Crie o formulário que será usado para adicionar cartas ao baralho
 Crie um formulário que será utilizado para criar as cartas do seu baralho.
@@ -412,29 +42,6 @@ Crie um formulário que será utilizado para criar as cartas do seu baralho.
   ![requisito-1](images/requisito-1.png)
 
   </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se existe um input texto que possui o `data-testid="name-input"`.
-  
-  - Será validado se existe um input textarea que possui o `data-testid="description-input"`.
-  
-  - Será validado se existe um input number que possui o `data-testid="attr1-input"`.
-  
-  - Será validado se existe um input number que possui o `data-testid="attr2-input"`.
-  
-  - Será validado se existe um input number que possui o `data-testid="attr3-input"`.
-  
-  - Será validado se existe um input texto que possui o `data-testid="image-input"`.
-
-  - Será validado se existe um input select que possui o `data-testid="rare-input"` com as `options`: `normal`, `raro` e `muito raro`, nesta ordem.
-
-  - Será validado se existe um input checkbox que possui o `data-testid="trunfo-input"`.
-
-  - Será validado se existe um botão que possui o `data-testid="save-button"`.
-</details>
-
 ---
 
 ## 2. Adicione as props necessárias ao componente de formulário 
@@ -480,33 +87,6 @@ Crie um formulário que será utilizado para criar as cartas do seu baralho.
   </details><br />
   
  **:bulb: Obs:** *não se preocupe com os valores a serem passados para as `props` nesse momento. No requisito 4, ficará nítido como estas `props` serão utilizadas.*
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o campo de nome recebe o valor da prop `cardName` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo de descrição recebe o valor da prop `cardDescription` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo do atributo 1 recebe o valor da prop `cardAttr1` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo do atributo 2 recebe o valor da prop `cardAttr2` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo do atributo 3 recebe o valor da prop `cardAttr3` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo de imagem recebe o valor da prop `cardImage` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo de raridade recebe o valor da prop `cardRare` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o campo de Super Trufo recebe o valor da prop `cardTrunfo` e se a callback `onInputChange` é chamada quando o campo sofre alguma alteração.
-
-  - Será validado se o botão de salvar é habilitado se o valor da prop `isSaveButtonDisabled` for `false`.
-
-  - Será validado se o botão de salvar é desabilitado se o valor da prop `isSaveButtonDisabled` for `true`.
-
-  - Será validado se a callback `onSaveButtonClick` é chamada quando o botão é clicado. 
-</details>
-
 ---
 
 ## 3. Crie e renderize o componente Card com as props necessárias
@@ -548,20 +128,6 @@ Crie um formulário que será utilizado para criar as cartas do seu baralho.
   ![requisito-3](images/requisito-3.png)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-  
-  - Será validado se o componente `data-testid="name-card"` é exibido e possui o valor da prop `cardName`.
-  - Será validado se o componente `data-testid="image-card"` é exibido e possui o atributo `src` com o valor da prop `cardImage` e o atributo alt com o valor da prop `cardName`.
-  - Será validado se o componente `data-testid="description-card"` é exibido e possui o valor da prop `cardDescription`.
-  - Será validado se o componente `data-testid="attr1-card"` é exibido e possui o valor da prop `cardAttr1`.
-  - Será validado se o componente `data-testid="attr2-card"` é exibido e possui o valor da prop `cardAttr2`.
-  - Será validado se o componente `data-testid="attr3-card"` é exibido e possui o valor da prop `cardAttr3`.
-  - Será validado se o componente `data-testid="rare-card"` é exibido e possui o valor da prop `cardRare`.
-  - Será validado se o componente `data-testid="trunfo-card"` é exibido quando a prop `cardTrunfo` tiver o valor `true`.
-  - Será validado se o componente `data-testid="trunfo-card"` **não** é exibido quando a prop `cardTrunfo` tiver o valor `false`.
-</details>
-
 ---
 
 ## 4. Crie o preview da carta que está sendo criada pelo formulário
@@ -596,18 +162,6 @@ Você deverá usar a prop `onInputChange` para passar uma callback para lidar co
 
   ![requisito-4](images/requisito-4.png)
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se é renderizado no preview da carta o valor digitado no input Nome do formulário.
-  - Será validado se é renderizado no preview da carta o valor digitado no input Descrição do formulário.
-  - Será validado se é renderizado no preview da carta o valor digitado no input referente ao atributo 1 no formulário.
-  - Será validado se é renderizado no preview da carta o valor digitado no input referente ao atributo 2 no formulário.
-  - Será validado se é renderizado no preview da carta o valor digitado no input referente ao atributo 3 no formulário.
-  - Será validado se é renderizado no preview da carta o `data-testid="trunfo-card"` se o checkbox Super Trunfo for selecionado.
-</details>
-
 ---
 
 ## 5. Faça a validação do botão de Salvar no formulário
@@ -622,23 +176,6 @@ Você deverá usar a prop `onInputChange` para passar uma callback para lidar co
   
   * Os atributos não podem receber valores negativos.
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o botão `salvar` está desabilitado quando a página é renderizada pela primeira vez.
-  - Será validado se o botão `salvar` está desabilitado se o campo nome estiver vazio.
-  - Será validado se o botão `salvar` está desabilitado se o campo imagem estiver vazio.
-  - Será validado se o botão `salvar` está desabilitado se o campo descrição estiver vazio.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 1 for maior que 90.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 1 for menor que 0.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 2 for maior que 90.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 2 for menor que 0.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 3 for maior que 90.
-  - Será validado se o botão `salvar` está desabilitado se o campo do atributo 3 for menor que 0.
-  - Será validado se o botão `salvar` está desabilitado se a somatória dos campos de atributos for maior que 210.
-  - Será validado se o botão `salvar` é habilitado ao preencher todos os campos do formulário corretamente.
-</details>
 
 ---
 
@@ -657,16 +194,6 @@ Você deverá usar a prop `onInputChange` para passar uma callback para lidar co
   * Após salvar as informações, o campo `Raridade` deve conter o valor `normal`.
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se os campos do formulário `Nome`, `Descrição` e `Imagem` são limpos após clicar em `salvar`.
-
-  - Será validado se o os três campos de atributos têm o valor `0` após clicar em `salvar`.
-  
-  - Será validado se o campo de `Raridade` tem o valor `normal` após clicar em `salvar`.
-</details>
-
 ---
 
 ## 7. Crie a validação do Super Trunfo
@@ -680,13 +207,6 @@ Você deverá usar a prop `onInputChange` para passar uma callback para lidar co
   **Dica: Lembre-se de utilizar a renderização condicional (na seção [:convenience_store: Desenvolvimento](#orientações)) do React nesse requisito.**
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o checkbox do Super Trunfo é renderizado ao carregar a página.
-
-  - Será validado se o texto "Você já tem um Super Trunfo em seu baralho" é renderizado caso já exista uma carta Super Trunfo no baralho.
-</details>
 
 ---
 
@@ -704,12 +224,6 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
   ![requisito-8](images/requisito-8.png)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se a carta é renderizada na página ao salvá-la.
-  - Será validado se a lista é atualizada automaticamente quando uma carta é adicionada.
-</details>
 
 ---
 
@@ -727,14 +241,6 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
     ![requisito-9](images/requisito-9.png)
   </details>
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o botão `Excluir` é renderizado na tela apenas nas cartas adicionadas ao baralho.
-  - Será validado se ao adicionar uma carta e excluí-la em seguida, a carta não é renderizada.
-  - Será validado se ao adicionar duas cartas e excluir uma em seguida, a carta não é renderizada.
-  - Será validado se ao excluir uma carta Super Trunfo, o checkbox no formulário é renderizado novamente.
-</details>
 
 ---
 
@@ -752,14 +258,6 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
 
   ![requisito-10](images/requisito-10.png)
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o campo de filtro por nome renderiza na tela.
-  - Será validado se apenas as cartas correspondentes aparecem após o filtro.
-  - Será validado se não renderiza nenhuma carta se não houver nome correspondente.
-</details>
 
 ---
 
@@ -782,16 +280,6 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
   ![requisito-11](images/requisito-11.png)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Será validado se o campo de filtro por Raridade renderiza na tela.
-  - Será validado se somente as cartas com raridade `normal` são exibidas após o filtro.
-  - Será validado se somente as cartas com raridade `raro` são exibidas após o filtro.
-  - Será validado se somente as cartas com raridade `muito raro` são exibidas após o filtro.
-  - Será validado se todas as cartas são exibidas quando o filtro de raridade está com a opção `todas` selecionada.
-  - Será validado se não renderiza nenhuma carta se não houver raridade correspondente.
-</details>
 
 ---
 
@@ -808,83 +296,7 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
   ![requisito-12](images/requisito-12.png)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-  - Será validado se somente a carta de super trunfo é exibida quando esse filtro é selecionado.
-</details>
 
 ---
 
-# Requisitos não avaliativos
 
-Você já criou o baralho do seu Tryunfo. Agora você pode criar uma funcionalidade para jogar com outras pessoas estudantes! Abaixo iremos apresentar uma **sugestão** de como essa funcionalidade pode ser criada! **Esses requisitos não serão avaliados pelo Evaluator**, portanto, fique livre para desenvolver da maneira que você achar melhor! Use os conhecimentos que você aprendeu e desenvolveu ao longo dos módulos anteriores e exerça a sua criatividade!
-
-<details><summary><strong>Regras do Jogo</strong></summary>
-
-  Antes de iniciar o desenvolvimento, vamos relembrar como funciona o jogo:
-
-  - Primeiramente, cada pessoa deve "pegar" uma carta aleatória do seu baralho.
-  - A primeira pessoa irá escolher um atributo para comparar com a carta da outra pessoa. Lembre-se que no Tryunfo os atributos podem ter nomes diferentes em cada baralho, por isso o ideal é se basear pela posição do atributo, ou seja, comparar o primeiro atributo da sua carta com o primeiro atributo da carta da pessoa rival.
-  - Ganha a rodada quem tiver o número maior no atributo escolhido.
-  - Ao término da rodada, cada pessoa deve "pegar" uma nova carta aleatória.
-  - A cada rodada é alternada a vez de quem escolhe o atributo para comparação.
-</details><br />
-
-<details><summary><strong>O que será necessário</strong></summary>
-
-  Para poder jogar, será necessário ter desenvolvido os seguintes passos:
-
-   1) Criar baralho com N cartas (já desenvolvido nos requisitos anteriores).
-   2) Criar uma função que embaralhe as cartas e renderize a primeira carta do baralho.
-   3) Criar um botão para renderizar a próxima carta do baralho.
-   4) Na ultima carta, ter um botão para recomeçar o jogo, embaralhando novamente.
-</details>
-
----
-
-## 13. Iniciar o jogo
-
-  * Crie um botão com o texto `Jogar`;
-
-  * Crie um novo estado na sua aplicação, que receberá as cartas do seu baralho em ordem aleatória;
-
-  * Ao clicar no botão `Jogar`, este novo estado deve receber as cartas que estão salvas no seu baralho, mas em ordem **aleatória**
-  veja neste link [como implementar uma função que embaralha um array](https://flaviocopes.com/how-to-shuffle-array-javascript/).
-
-  * Crie um novo estado na sua aplicação que irá controlar a posição no array da carta que será renderizada.
-  
-  * Para renderizar na página, você pode utilizar **renderização condicional** para mostrar a carta apenas quando um jogo estiver em andamento.
-
-  **Lembre-se que há várias formas possíveis para montar esta função. Isso é apenas uma sugestão.**
-
----
-
-## 14. Criar botão Próxima Carta
-
-  * Após clicar em `Jogar` e embaralhar as cartas existentes, exiba a primeira carta na tela, ou seja, a carta que está na posição `0` do array.
-
-  * Exiba um botão com o texto `Próxima carta`.
-
-  * Ao clicar no botão "Próxima carta", a próxima carta do seu baralho "embaralhado" deve ser renderizada. Você pode usar o estado criado no requisito anterior e incrementá-lo em cada rodada.
-
-<details><summary>Imagem Exemplo:</summary>
-
-  ![requisito-14](images/requisito-14.png)
-</details>
-
----
-
-## 15. Recomeçar o jogo
-
-  * Quando a última carta do baralho estiver sendo renderizada, ou seja, quando você estiver na última posição do array de cartas embaralhadas, o botão "Próxima carta" não deve ser renderizado na tela.
-
-  * Um novo botão deve ser exibido com o texto `Embaralhar cartas`. 
-  
-  * Ao clicar no botão `Embaralhar cartas` o baralho deve ser embaralhado novamente e o estado que controla a posição da carta exibida deve ser `0` novamente.
-
-<details><summary>Imagem Exemplo:</summary>
-
-  ![requisito-15](images/requisito-15.png)
-</details>
-
----

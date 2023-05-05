@@ -437,30 +437,4 @@ Você já tem várias cartas legais em seu baralho, agora é a hora de listá-la
 
 ---
 
-# Requisitos não avaliativos
-
-Você já criou o baralho do seu Tryunfo. Agora você pode criar uma funcionalidade para jogar com outras pessoas estudantes! Abaixo iremos apresentar uma **sugestão** de como essa funcionalidade pode ser criada! **Esses requisitos não serão avaliados pelo Evaluator**, portanto, fique livre para desenvolver da maneira que você achar melhor! Use os conhecimentos que você aprendeu e desenvolveu ao longo dos módulos anteriores e exerça a sua criatividade!
-
-<details><summary><strong>Regras do Jogo</strong></summary>
-
-  Antes de iniciar o desenvolvimento, vamos relembrar como funciona o jogo:
-
-  - Primeiramente, cada pessoa deve "pegar" uma carta aleatória do seu baralho.
-  - A primeira pessoa irá escolher um atributo para comparar com a carta da outra pessoa. Lembre-se que no Tryunfo os atributos podem ter nomes diferentes em cada baralho, por isso o ideal é se basear pela posição do atributo, ou seja, comparar o primeiro atributo da sua carta com o primeiro atributo da carta da pessoa rival.
-  - Ganha a rodada quem tiver o número maior no atributo escolhido.
-  - Ao término da rodada, cada pessoa deve "pegar" uma nova carta aleatória.
-  - A cada rodada é alternada a vez de quem escolhe o atributo para comparação.
-</details><br />
-
-<details><summary><strong>O que será necessário</strong></summary>
-
-  Para poder jogar, será necessário ter desenvolvido os seguintes passos:
-
-   1) Criar baralho com N cartas (já desenvolvido nos requisitos anteriores).
-   2) Criar uma função que embaralhe as cartas e renderize a primeira carta do baralho.
-   3) Criar um botão para renderizar a próxima carta do baralho.
-   4) Na ultima carta, ter um botão para recomeçar o jogo, embaralhando novamente.
-</details>
-
----
 
